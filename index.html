@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSphere</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">SoundSphere</a>
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="#music" class="menu-link">Music</a>
+                    <!-- Подменю для Music -->
+                    <div class="submenu">
+                        <a href="#" class="submenu-link">Rock</a>
+                        <a href="#" class="submenu-link">Jazz</a>
+                        <a href="#" class="submenu-link">Hip-Hop</a>
+                    </div>
+                </div>
+                <a href="#videos" class="menu-link">Videos</a>
+                <a href="#about" class="menu-link">About</a>
+                <a href="#contact" class="menu-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="intro-section">
+            <h1>Welcome to SoundSphere</h1>
+            <p>Discover the sound that moves you.</p>
+        </section>
+        
+        <section id="music" class="content-section">
+            <h2>Our Music</h2>
+            <audio controls src="Audio/Franz.mp3"></audio>
+            <p>Feel the beat with SoundSphere’s new tracks.</p>
+        </section>
+
+        <section id="videos" class="content-section">
+            <h2>Live Performances</h2>
+            <video controls src="Video/Madcon.mp4"></video>
+        </section>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

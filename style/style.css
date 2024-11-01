@@ -1,0 +1,132 @@
+/* Базовые стили для страницы */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f4f4f4;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-link {
+  color: #ffd700;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: #fff;
+}
+
+/* Стили для подменю */
+.menu-item {
+  position: relative;
+}
+
+.submenu {
+  display: none; /* Скрыто по умолчанию */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.submenu-link {
+  display: block;
+  padding: 10px 20px;
+  color: #ffd700;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.submenu-link:hover {
+  background-color: #555;
+}
+
+/* Показ подменю при наведении на Music */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* Секция приветствия */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: linear-gradient(to right, #333, #ffd700);
+  color: #fff;
+}
+
+/* Стили для секций контента */
+.content-section {
+  padding: 50px;
+  text-align: center;
+}
+
+audio, video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+  
+  h1 {
+      font-size: 2.5em;
+      white-space: normal;
+  }
+  
+  h2 {
+      font-size: 1.5em;
+  }
+  
+  p {
+      font-size: 14px;
+  }
+}
